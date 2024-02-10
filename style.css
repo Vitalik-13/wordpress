@@ -3,6 +3,9 @@
   overflow-x: hidden;
   box-sizing: border-box;
 }
+.overflow {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }

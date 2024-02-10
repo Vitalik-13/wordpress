@@ -50,13 +50,16 @@ wrapperTabs.forEach((item, idx) => {
   });
 });
 
+const body = document.querySelector(".body");
 const menu = document.querySelector(".menu");
 const burgerMenu = document.querySelector("#burger");
 burgerMenu.addEventListener("click", () => {
   if (burgerMenu.checked) {
     menu.classList.add("transform");
+    body.classList.add("overflow");
   } else {
     menu.classList.remove("transform");
+    body.classList.remove("overflow");
   }
 });
 
