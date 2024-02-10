@@ -49,3 +49,21 @@ wrapperTabs.forEach((item, idx) => {
     fotoTabMain.src = itemTabPhoto[idx].src;
   });
 });
+
+const menu = document.querySelector(".menu");
+const burgerMenu = document.querySelector("#burger");
+burgerMenu.addEventListener("click", () => {
+  if (burgerMenu.checked) {
+    menu.classList.add("transform");
+  } else {
+    menu.classList.remove("transform");
+  }
+});
+
+const listMenu = document.querySelectorAll(".list-menu");
+listMenu.forEach((itemList) =>
+  itemList.addEventListener("click", () => {
+    menu.classList.remove("transform");
+    burgerMenu.checked = false;
+  })
+);
